@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<!-- saved from url=(0312)https://framer.com/edit?framerSiteId=3c23d58a4d859a2f0561a16592791c072ac97c9e4128fbeec6e64aa5f823f48d&source=intermediate-angelfish-39497.rehost.page&features=%7B%22editorBarDisableFrameAncestorsSecurity%22%3Afalse%2C%22onPageLocalizationSupport%22%3Atrue%2C%22onPageMoveTool%22%3Atrue%7D&loadStart=1771102962770 -->
+<html class=" idc0_343 hqxrjkizm"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	
+	<link rel="preload" as="script" href="./bootstrap.dc758001a4d48a989c3d62887d26e0f8fbc4596e.js">
+	<script>Object.defineProperty(window, 'framerEnvironment', { value: Object.freeze("production") });;
+</script>
+<script>
+Object.defineProperty(window, 'castlePublishableAPIKey', { value: Object.freeze("pk_xYqGbB61EcFiSh4LUshpT4DGoEQMKQMB") });
+</script>
+<script>Object.defineProperty(window, 'framerRelease', { value: Object.freeze({"channel":"stable"}) });;</script>
+<script>Object.defineProperty(window, 'framerUser', { value: Object.freeze(null) });</script>
+<script src="./bootstrap.dc758001a4d48a989c3d62887d26e0f8fbc4596e.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+	<meta name="color-scheme" content="light dark">
+	
+	<script type="text/javascript">
+		Object.defineProperty(window, 'cssBundleURL', { value: "https://app.framerstatic.com/editorbar.VTJ7MYBJ.css" });
+		
+		Object.defineProperty(window, 'deferredJsFiles', {
+			value:["/s/app.dc758001a4d48a989c3d62887d26e0f8fbc4596e/scripts/react/react.production.min.js","/s/app.dc758001a4d48a989c3d62887d26e0f8fbc4596e/scripts/react-dom/react-dom.production.min.js","/s/app.dc758001a4d48a989c3d62887d26e0f8fbc4596e/scripts/react-dom/react-dom-server-legacy.browser.production.min.js"]
+		});
+	</script>
+	
+		
+		<link href="https://app.framerstatic.com/chunk-VYDUMP4T.mjs" rel="modulepreload">
+<link href="https://app.framerstatic.com/chunk-HMF7T2NG.mjs" rel="modulepreload">
+<link href="https://app.framerstatic.com/chunk-2F5FSM3K.mjs" rel="modulepreload">
+<link href="https://app.framerstatic.com/chunk-AHQIRSXG.mjs" rel="modulepreload">
+	
+<style>.rdp {
+  --rdp-cell-size: 40px;
+  --rdp-accent-color: #0000ff;
+  --rdp-background-color: #e7edff;
+  --rdp-accent-color-dark: #3003e1;
+  --rdp-background-color-dark: #180270;
+  --rdp-outline: 2px solid var(--rdp-accent-color); /* Outline border for focused elements */
+  --rdp-outline-selected: 2px solid rgba(0, 0, 0, 0.75); /* Outline border for focused _and_ selected elements */
+
+  margin: 1em;
+}
+
+/* Hide elements for devices that are not screen readers */
+.rdp-vhidden {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  background: transparent;
+  border: 0;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  position: absolute !important;
+  top: 0;
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  overflow: hidden !important;
+  clip: rect(1px, 1px, 1px, 1px) !important;
+  border: 0 !important;
+}
+
+/* Buttons */
+.rdp-button_reset {
+  appearance: none;
+  position: relative;
+  margin: 0;
+  padding: 0;
+  cursor: default;
+  color: inherit;
+  outline: none;
+  background: none;
+  font: inherit;
+
+  -moz-appearance: none;
+  -webkit-appearance: none;
+}
+
+.rdp-button {
+  border: 2px solid transparent;
+}
+
+.rdp-button[disabled] {
+  opacity: 0.25;
+}
+
+.rdp-button:not([disabled]) {
+  cursor: pointer;
+}
+
+.rdp-button:focus:not([disabled]),
+.rdp-button:active:not([disabled]) {
+  color: inherit;
+  border: var(--rdp-outline);
+  background-color: var(--rdp-background-color);
+}
+
+.rdp-button:hover:not([disabled]) {
+  background-color: var(--rdp-background-color);
+}
+
+.rdp-months {
+  display: flex;
+}
+
+.rdp-month {
+  margin: 0 1em;
+}
+
+.rdp-month:first-child {
+  margin-left: 0;
+}
+
+.rdp-month:last-child {
+  margin-right: 0;
+}
+
+.rdp-table {
+  margin: 0;
+  max-width: calc(var(--rdp-cell-size) * 7);
+  border-collapse: collapse;
+}
+
+.rdp-with_weeknumber .rdp-table {
+  max-width: calc(var(--rdp-cell-size) * 8);
+  border-collapse: collapse;
+}
+
+.rdp-caption {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0;
+  text-align: left;
+}
+
+.rdp-multiple_months .rdp-caption {
+  position: relative;
+  display: block;
+  text-align: center;
+}
+
+.rdp-caption_dropdowns {
+  position: relative;
+  display: inline-flex;
+}
+
+.rdp-caption_label {
+  position: relative;
+  z-index: 1;
+  display: inline-flex;
+  align-items: center;
+  margin: 0;
+  padding: 0 0.25em;
+  white-space: nowrap;
+  color: currentColor;
+  border: 0;
+  border: 2px solid transparent;
+  font-family: inherit;
+  font-size: 140%;
+  font-weight: bold;
+}
+
+.rdp-nav {
+  white-space: nowrap;
+}
+
+.rdp-multiple_months .rdp-caption_start .rdp-nav {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+}
+
+.rdp-multiple_months .rdp-caption_end .rdp-nav {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+}
+
+.rdp-nav_button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: var(--rdp-cell-size);
+  height: var(--rdp-cell-size);
+  padding: 0.25em;
+  border-radius: 100%;
+}
+
+/* ---------- */
+/* Dropdowns  */
+/* ---------- */
+
+.rdp-dropdown_year,
+.rdp-dropdown_month {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+}
+
+.rdp-dropdown {
+  appearance: none;
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  cursor: inherit;
+  opacity: 0;
+  border: none;
+  background-color: transparent;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+.rdp-dropdown[disabled] {
+  opacity: unset;
+  color: unset;
+}
+
+.rdp-dropdown:focus:not([disabled]) + .rdp-caption_label,
+.rdp-dropdown:active:not([disabled]) + .rdp-caption_label {
+  border: var(--rdp-outline);
+  border-radius: 6px;
+  background-color: var(--rdp-background-color);
+}
+
+.rdp-dropdown_icon {
+  margin: 0 0 0 5px;
+}
+
+.rdp-head {
+  border: 0;
+}
+
+.rdp-head_row,
+.rdp-row {
+  height: 100%;
+}
+
+.rdp-head_cell {
+  vertical-align: middle;
+  text-transform: uppercase;
+  font-size: 0.75em;
+  font-weight: 700;
+  text-align: center;
+  height: 100%;
+  height: var(--rdp-cell-size);
+  padding: 0;
+}
+
+.rdp-tbody {
+  border: 0;
+}
+
+.rdp-tfoot {
+  margin: 0.5em;
+}
+
+.rdp-cell {
+  width: var(--rdp-cell-size);
+  height: 100%;
+  height: var(--rdp-cell-size);
+  padding: 0;
+  text-align: center;
+}
+
+.rdp-weeknumber {
+  font-size: 0.75em;
+}
+
+.rdp-weeknumber,
+.rdp-day {
+  display: flex;
+  overflow: hidden;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  width: var(--rdp-cell-size);
+  max-width: var(--rdp-cell-size);
+  height: var(--rdp-cell-size);
+  margin: 0;
+  border: 2px solid transparent;
+  border-radius: 100%;
+}
+
+.rdp-day_today:not(.rdp-day_outside) {
+  font-weight: bold;
+}
+
+.rdp-day_selected:not([disabled]),
+.rdp-day_selected:focus:not([disabled]),
+.rdp-day_selected:active:not([disabled]),
+.rdp-day_selected:hover:not([disabled]) {
+  color: white;
+  background-color: var(--rdp-accent-color);
+}
+
+.rdp-day_selected:focus:not([disabled]) {
+  border: var(--rdp-outline-selected);
+}
+
+.rdp:not([dir='rtl']) .rdp-day_range_start:not(.rdp-day_range_end) {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.rdp:not([dir='rtl']) .rdp-day_range_end:not(.rdp-day_range_start) {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.rdp[dir='rtl'] .rdp-day_range_start:not(.rdp-day_range_end) {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.rdp[dir='rtl'] .rdp-day_range_end:not(.rdp-day_range_start) {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.rdp-day_range_end.rdp-day_range_start {
+  border-radius: 100%;
+}
+
+.rdp-day_range_middle {
+  border-radius: 0;
+}
+</style><link rel="stylesheet" href="./editorbar.VTJ7MYBJ.css"></head>
+
+<body class="notranslate editorbar framer-theme-dark framer-release-stable">
+<div id="root" role="presentation"></div>
+
+
+<!--
+
+
+-->
+
+
+	<script>
+		// Keep these keys in sync with DarkModeProvider.tsx
+		var userDarkMode = localStorage.getItem("dark-mode") === "true"
+		var overrideSystem = localStorage.getItem("dark-mode-override-system") === "true"
+		var systemDarkMode = matchMedia("(prefers-color-scheme: dark)").matches
+		var isDarkMode = overrideSystem ? userDarkMode : systemDarkMode
+		if (isDarkMode) {
+			document.body.classList.add("framer-theme-dark")
+		}
+
+		// Set release channel as class on body.
+		var framerReleaseChannel = window.framerRelease && window.framerRelease.channel
+		if (framerReleaseChannel) {
+			document.body.classList.add("framer-release-" + framerReleaseChannel)
+		}
+
+		// Add a class to the body to indicate that the agent experiment is on and apply the agent theme
+		// as the default theme.
+		// TODO: Remove once experiment is removed.
+		var storageKey = framerReleaseChannel ? "experiments-" + framerReleaseChannel : "experiments"
+		try {
+			var experiments = JSON.parse(localStorage.getItem(storageKey) || "{}")
+			if (experiments.agent === "on") {
+				document.body.classList.add("agent")
+			}
+		} catch (e) {
+			// Ignore errors.
+		}
+	</script>
+
+
+
+
+<script src="./editorbar.EAYMXZVR.mjs" type="module"></script>
+
+
+<script src="./react.production.min.js" defer=""></script><script src="./react-dom.production.min.js" defer=""></script><script src="./react-dom-server-legacy.browser.production.min.js" defer=""></script><div id="drag-overlay" style="position: absolute; z-index: 1000000; inset: 0px; display: none;"></div></body></html>
